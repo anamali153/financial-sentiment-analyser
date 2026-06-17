@@ -24,12 +24,10 @@ financial sentiment classification (positive / neutral / negative).
 ![Confusion Matrix](confusion_matrix.png)
 
 ## Model Weights
-Hosted on HuggingFace Hub (not committed to this repo, to keep it lightweight):
-**[Anamali153/financial-sentiment-distilbert](https://huggingface.co/Anamali153/financial-sentiment-distilbert)**
+Hosted on HuggingFace Hub: **[Anamali153/financial-sentiment-distilbert](https://huggingface.co/Anamali153/financial-sentiment-distilbert)**
 
 ## Dataset
-FinancialPhraseBank (Malo et al., 2014) — 4,846 sentences with 50%+ annotator agreement,
-annotated by 16 people with financial market expertise.
+FinancialPhraseBank (Malo et al., 2014) — 4,846 sentences with 50%+ annotator agreement.
 
 ## How to Run
 
@@ -40,13 +38,9 @@ pip install -r requirements.txt
 python app.py
 ```
 
-The app automatically pulls model weights from HuggingFace Hub on first run.
-
 ## Key Decisions
 - Used weighted F1 as the metric due to class imbalance (neutral ~59%)
 - max_length=128 tokens based on EDA of sentence lengths
 - 4 training epochs, lr=2e-5, batch size=16
 - Compared against a general-purpose zero-shot model (RoBERTa) as baseline
-  to isolate the effect of domain-specific fine-tuning
-- Model weights hosted on HuggingFace Hub rather than committed to git,
-  following standard ML engineering practice for large binary artifacts
+- Model weights hosted on HuggingFace Hub rather than committed to git
