@@ -5,6 +5,10 @@ financial sentiment classification (positive / neutral / negative).
 
 [![Model on HuggingFace](https://img.shields.io/badge/🤗%20Model-HuggingFace-yellow)](https://huggingface.co/Anamali153/financial-sentiment-distilbert)
 
+
+## Live Demo
+🚀 **[Try it live on HuggingFace Spaces](https://huggingface.co/spaces/Anamali153/financial-sentiment)**
+
 ## Results
 
 | Model | F1 Score |
